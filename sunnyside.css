@@ -1,0 +1,226 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+
+.header{
+    background-image:url(./images/desktop/image-header.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height:100vh;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px ;
+}
+.nav-right img{
+    width:80px;
+    vertical-align: middle;
+}
+.nav-left ul{ 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.links{
+    list-style-type: none;
+}
+.links a{
+    text-decoration: none;
+    color: white;
+    font-family:"Barlow",sans-serif;
+    font-size: small;
+    vertical-align: middle;
+}
+#contact{
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+}
+#contact a{
+    color: black;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "Fraunces", sans-serif;
+    padding: 5px;
+    font-size: x-small;
+}
+#contact:hover{
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+}
+.creatives {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.creatives h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: white;
+    font-family: "Fraunces";
+    margin: 0;
+    letter-spacing: 5px; 
+    animation: fadeIn 2s ease-in-out;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+.creatives img{
+    position: absolute;
+    bottom: -450px;
+    left:50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 200px;
+    animation:bounce 1.5s infinite;
+}
+
+@keyframes bounce{
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+
+}
+.grid{
+    display: grid;
+    grid-template-areas:
+    'transform egg'
+    'pinkcup stand'
+    'cherries orange';
+    grid-template-columns:1fr 1fr;
+    grid-template-rows:1fr 1fr;
+    max-width: 1200px;
+}
+
+.transform{
+    grid-area: 'transform';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+h3{
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 900;
+    text-align: left;
+}
+.egg{
+    grid-area: 'egg';
+    height: 400px;
+}
+
+.pinkcup{
+    grid-area: 'pinkcup';
+}
+
+.stand{
+    grid-area: 'stand';
+    padding: 20px;
+}
+
+.cherries{
+    grid-area: 'cherries';
+    background-image: url(./images/desktop/image-graphic-design.jpg);
+}
+
+.orange{
+    grid-area: 'orange';
+    background-image: url(./images/desktop/image-photography.jpg);
+}
+
+.client h5{
+    margin-top: 5rem;
+    font-family: 'Fraunces';
+    text-transform: uppercase;
+    font-weight:300;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+
+}
+
+.testimonials{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    text-align: center;
+ }
+ 
+.testimonials > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 340px;
+    padding: 1rem;
+}
+.testimonials img{
+    width: 50px;
+    border-radius: 50%;
+    align-items: center;
+    margin-bottom: 2rem;
+
+}
+
+.testimonials p{
+    text-align: center;
+    line-height: 1.5;
+}
+
+.text{
+    font-family: 'Barlow';
+}
+
+.names{
+    margin-top: 3rem;
+    font-weight: bold;
+    font-family: 'Fraunces';
+    font-size:small;
+}
+
+.titles{
+    font-family: 'Barlow';
+    font-weight: 100;
+    font-size: smaller;
+    margin-top: 5px;
+}
+
+.images{
+    max-width: max-content;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+}
+
+    
+   
+
+
+
